@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\app.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="src\app.ts" />
     <None Remove="src\i18n\index.ts" />
     <None Remove="src\modules\teams\store\index.ts" />
@@ -32,7 +28,6 @@
     <TypeScriptCompile Include="src\shims-vue.d.ts" />
     <TypeScriptCompile Include="src\store\index.ts" />
     <TypeScriptCompile Include="src\types.ts" />
-    <TypeScriptCompile Include="wwwroot\app.ts" />
   </ItemGroup>
 
   <ItemGroup>
