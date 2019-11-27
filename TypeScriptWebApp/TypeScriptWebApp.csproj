@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TypeScriptToolsVersion>3.7</TypeScriptToolsVersion>
+    <TypeScriptBuildMode>true</TypeScriptBuildMode>
+    <AssemblyName>VueTypeScriptWebApp</AssemblyName>
+    <RootNamespace>VueTypeScriptWebApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\app.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="src\app.ts" />
+    <None Remove="src\i18n\index.ts" />
+    <None Remove="src\modules\teams\store\index.ts" />
+    <None Remove="src\modules\teams\types.ts" />
+    <None Remove="src\shims-vue.d.ts" />
+    <None Remove="src\store\index.ts" />
+    <None Remove="src\types.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\i18n\index.ts" />
+    <TypeScriptCompile Include="src\modules\teams\store\index.ts" />
+    <TypeScriptCompile Include="src\modules\teams\types.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\shims-vue.d.ts" />
+    <TypeScriptCompile Include="src\store\index.ts" />
+    <TypeScriptCompile Include="src\types.ts" />
+    <TypeScriptCompile Include="wwwroot\app.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\modules\teams\components\" />
+    <Folder Include="src\modules\teams\repositories\" />
+    <Folder Include="src\components\" />
+  </ItemGroup>
+
+</Project>
