@@ -19,9 +19,9 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "."
   },
-  "paths": {
-    "@/*": [ "src/*" ]
-  },
+  //"paths": {
+  //  "@lib/*": [ "src/*" ]
+  //},
   "exclude": [
     "node_modules"
   ],
