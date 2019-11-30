@@ -1,4 +1,4 @@
-﻿import { Module, MutationTree } from 'vuex';
+﻿import { Module } from 'vuex';
 import { TeamState } from '../types';
 import { RootState } from '../../../types';
 

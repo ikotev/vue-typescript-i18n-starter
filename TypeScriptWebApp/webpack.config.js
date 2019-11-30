@@ -54,17 +54,11 @@ var config = {
         rules: [
             {
                 test: /\.ts(x?)$/,
+                loader: 'ts-loader', 
                 exclude: /node_modules/,
-                loader: 'ts-loader',
                 options: {
                     appendTsSuffixTo: [/\.vue$/]
                 }
-            },
-
-            {
-                enforce: "pre",
-                test: /\.js$/,
-                loader: "source-map-loader"
             },
 
             {

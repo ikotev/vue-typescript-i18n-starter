@@ -4,7 +4,10 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "noEmitOnError": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "removeComments": false,
     "sourceMap": true,
     "target": "es5",
@@ -13,11 +16,17 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true
-
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "."
+  },
+  "paths": {
+    "@/*": [ "src/*" ]
   },
   "exclude": [
-    "node_modules",
-    "wwwroot"
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue"
   ]
 }
